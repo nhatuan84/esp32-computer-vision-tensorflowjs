@@ -35,16 +35,14 @@
 		        }, 1000);
 	      	});
 		}
-		function run(){
-			var i = 1;
+        loadmodel();		
+        $(document).ready(function(){
+		    var i = 1;
 		    setInterval(function(){ 
 				dofor(i);
         		if(i++ == 3) i = 1;
 		    }, 4000);
-		}
-		
-        loadmodel();		
-		run();
+		});
       	
   </script>
 </head>
